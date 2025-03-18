@@ -1,5 +1,3 @@
-//abcdefghijklmnopqrstuvwxyz0123456789
-
 // write 2 func one returns nice names and the returns naughty names
 // arr of objects where each obj has 2 props name which is str and wasNice which is boolean
 // g return an arr of els which are the val of the name prop in each object
