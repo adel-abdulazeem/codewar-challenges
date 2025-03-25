@@ -1,7 +1,6 @@
 //abcdefghijklmnopqrstuvwxyz0123456789
 
 
-
 //     const session = {
 //       "cookie":{"originalMaxAge":null,"expires":null,
 //         "httpOnly":true,"path":"/"},
@@ -13,4 +12,3 @@
       
 
 
-console.log(new Date("December 17"))
