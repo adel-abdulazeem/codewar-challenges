@@ -9,7 +9,7 @@ function remove (string) {
             el = el.slice(0, -1)
         }
         return el
-    }).join('')
+    }).join(' ')
   }
 
   console.log(remove('Hi!!!'), 'Hi')
