@@ -1,20 +1,27 @@
-//abcdefghijklmnopqrstuvwxyz0123456789
+// write a func that takes fn as arg and it return a num
 
-var chunk = function(arr, size) {
-  let res = []
-  let chunk = []
-  for (let i = 0; i < arr.length; i++) {
-    chunk.push(arr[i])
-    if (chunk.length === size) {
-      res.push(chunk)
-      chunk = []
+function memoize(fn) {
+  let memo = {}
+  return function(...args) {
+    let key = args.join(',')
+    if (memo[key]) {
+      return memo[key]
+    } else {
+      let result = fn(...args)
+      memo[key] = result
+      return result
     }
   }
-  if (chunk.length > 0) {
-    res.push(chunk)
-  }
-  return res
-};
+}
 
-console.log(chunk([1, 2, 3, 4, 5], 2)) // [[1, 2], [3, 4], [5]]
-console.log(chunk([1,9,6,3,2], 3)) // [[1, 2, 3], [4, 5]]
+
+const add = (a, b) => a + b
+const subtract = (a, b) => a - b
+const multiply = (a, b) => a * b 
+const fib = (n) => {  // 0, 1, 1, 2, 3, 5, 8, 13, 21
+    if (n <= 1) return n
+    return fib(n - 1) + fib(n - 2)
+} 
+const memoizedAdd = memoize(fib)  // memoizedAdd(1, 2) // 3
+console.log(memoizedAdd([[5],[]]
+)) // 3
