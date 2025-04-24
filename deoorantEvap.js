@@ -5,10 +5,10 @@
 
 function evaporator(content, evap_per_day, threshold){ 
     let days = 0
-    let limit = content * (threshold/100)
-    let current = content
-    while (current > limit) {
-        current -= current * (evap_per_day / 100);
+    let remaining = 100
+
+    while (remaining > threshold) {
+        remaining -= remaining * (evap_per_day / 100);
         days++;
       }
     
