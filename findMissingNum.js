@@ -11,15 +11,12 @@ function findMissingNumber(sequence){
     // if the seq is broken return the lowest missing num
     // conditional to determine if the each 2 adjacent el are incremented by one or not starting from 1 return 0
     //e
-    let arr = sequence.split(' ').sort((a,b) => Number(a) - Number(b))
-    for(let i = 1; i <= sequence.length; i++){
-        if(!Number(arr[i])){
-            return 1
-        }else if(arr[i] !== i){
-            return i
-        }
-    return 0
+    if (!Number.isInteger(+sequence.split(' ').join(''))) return 1;
+    let arr = sequence.split(' ').map(el => Number(el))
+    for(let i = 1; i < Math.max(...arr); i++){
+        if(!arr.includes(i)) return i 
     }
+    return 0
   }
 
   console.log(findMissingNumber("1 2 3 4"))// return 0 because the sequence is complete
@@ -27,6 +24,6 @@ function findMissingNumber(sequence){
   console.log(findMissingNumber("2 1 3 a" ))//eturn 1, because it contains a non numerical character
   console.log(findMissingNumber("1 3 2 5" ))//return 4, because 4 is the lowest missing from the sequence
 
-
+console.log('hello')
 
 
