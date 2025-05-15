@@ -1,1 +1,1 @@
-&& el < first
+console.log(secondSymbol("Hello world!!!", 'A' ))
