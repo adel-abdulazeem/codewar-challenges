@@ -23,7 +23,7 @@ function paul(x) {
         'life': 0,
         'eating': 1
     };
-    const score = x.map(el => vals[el]).reduce((c, acc) => c + acc, 0)
+    const score = x.reduce((acc, c) => vals[c] + acc, 0)
     if (score < 40) {
         return 'Super happy!'
     } else if (score >= 40 && score < 70) {
