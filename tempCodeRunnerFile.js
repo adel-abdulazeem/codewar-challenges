@@ -1,1 +1,1 @@
-console.log(secondSymbol("Hello world!!!", 'A' ))
+console.log(paul(['life', 'eating', 'life', 'Petes kata']))
