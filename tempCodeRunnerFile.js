@@ -1,3 +1,9 @@
-console.log(averageLength(['u', 'y']), "It should work for ['u', 'y']")
-console.log(averageLength(['aa', 'bbb', 'cccc']), ['aaa', 'bbb', 'ccc'])
-console.log(averageLength(['aa', 'bb', 'ddd', 'eee']), ['aaa', 'bbb', 'ddd', 'eee'])
+    // if (
+    //     Math.abs(pythonCount - rubyCount) >= 2 ||
+    //     Math.abs(pythonCount - jsCount) >= 2 ||
+    //     Math.abs(rubyCount - jsCount) >= 2
+    // ) {
+    //     return false
+    // } else {
+    //     return true
+    // }
