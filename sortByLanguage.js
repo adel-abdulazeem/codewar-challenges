@@ -19,4 +19,4 @@ let list1 = [
     { firstName: 'Agustin', lastName: 'V.', country: 'Uruguay', continent: 'Americas', age: 19, language: 'JavaScript' }
 ];
 
-console.log(sortByLanguage(list1))
+console.log(1 < 2)
