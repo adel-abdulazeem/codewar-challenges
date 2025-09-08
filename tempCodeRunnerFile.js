@@ -1,7 +1,2 @@
-function reverseString(text) {
-//     if (text === "") {// terminal case
-//         return ""
-//     } else {
-//         return reverseString(text.substr(1)) + text[0]
-//     }
-// }
+console.log(part(['Pheasant', 'Goose', 'Starling', 'Robin']), 'Lynn, I\'ve pierced my foot on a spike!!')
+// console.log(part(['Grouse', 'Partridge', 'Pheasant', 'Goose', 'Starling', 'Robin', 'Thrush', 'Emu', 'PearTree', 'Chat', 'Dan', 'Square', 'Toblerone', 'Lynn', 'AlphaPapa', 'BMW', 'Graham', 'Tool', 'Nomad', 'Finger', 'Hamster']), 'Mine\'s a Pint!!!!!!!!')
