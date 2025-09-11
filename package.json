@@ -1,0 +1,21 @@
+{
+  "name": "codewar-challenges",
+  "version": "1.0.0",
+  "description": "![Codewars](https://github.r2v.ch/codewars?user=Adel%20Abdulazeem&stroke=COLOR)",
+  "main": "absentVowel.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adel-abdulazeem/codewar-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adel-abdulazeem/codewar-challenges/issues"
+  },
+  "homepage": "https://github.com/adel-abdulazeem/codewar-challenges#readme"
+}
