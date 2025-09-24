@@ -19,7 +19,8 @@ class Block {
         return this.height
     }
     getVolume() {
-        return this.width * this.height * this.length
+        let { width, length, height } = this
+        return width
     }
     getSurfaceArea() {
         return 2 * ((this.width * this.length) + (this.length * this.height) + (this.width * this.height))
@@ -29,4 +30,5 @@ class Block {
 let b = new Block([2, 4, 6])
 
 console.log(b.getHeight())
+console.log(b.getVolume())
 console.log(b.getSurfaceArea())
