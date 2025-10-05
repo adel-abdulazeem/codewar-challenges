@@ -8,5 +8,8 @@ class Class {
     }
 }
 
-console.log(Class.getNumber())
-console.log(Class.getNumber())
+console.log(Class.getNumber());
+// console.log(Class.getNumber());
+// console.log(Class.getNumber());
+
+console.log(Class.number)
