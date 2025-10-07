@@ -35,6 +35,30 @@ function secureBooking() {
 }
 const booker = secureBooking()
 
-booker()
-booker()
-booker()
+let funcs = [];
+
+for (var i = 0; i < 3; i++) {
+    funcs.push(function () {
+        console.log(i);
+    });
+}
+
+// funcs[0](); // 
+// funcs[1](); // 
+// funcs[2](); // 
+
+
+function makeCounter() {
+    let count = 0;
+    return {
+        inc() { return ++count; },
+        reset() { count = 0; }
+    };
+}
+
+const v = makeCounter()
+v.inc()
+v.inc()
+v.reset()
+v.inc()
+console.log(v.inc())
