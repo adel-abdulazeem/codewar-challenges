@@ -1,1 +1,1 @@
-var
+higherOrderExample(multiplyByTen)();
