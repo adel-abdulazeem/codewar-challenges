@@ -1,1 +1,1 @@
-higherOrderExample(multiplyByTen)();
+displayLetterToDoctor('Smith', 'Need $$.'); // logs 'Dear Dr. Smith, [...]'
